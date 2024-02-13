@@ -2,16 +2,20 @@ package com.slow3586.spring.question;
 
 import com.slow3586.spring.resource.ResourceService;
 import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Repository;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 
 @Setter
-@FieldDefaults(level = AccessLevel.PRIVATE)
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
+@Repository
 public class QuestionDao {
     static String QUESTION_SPLIT_SYMBOL = "*";
     static String ANSWER_SPLIT_SYMBOL = "\n";
