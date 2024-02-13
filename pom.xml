@@ -14,6 +14,7 @@
     <name>spring</name>
     <description>spring</description>
     <modules>
+        <module>spring-01</module>
     </modules>
     <properties>
         <java.version>17</java.version>
